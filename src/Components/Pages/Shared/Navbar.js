@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from "../../../assets/shared/logo.svg";
+import hamBurger from "../../../assets/shared/icon-hamburger.svg";
 
 const Navbar = () => {
     // let activeStyle = {
@@ -29,27 +30,31 @@ const Navbar = () => {
         <li className='tracking-wide'><NavLink to="/technology" style={navLinkStyle}><span className='font-semibold tracking-widest'>03</span> TECHNOLOGY</NavLink></li>
     </>
     return (
-        <div className="navbar pb-2 lg:px-10 absolute top-0 left-0 right-0 bg-transparent">
+        <div className="navbar pb-2 lg:pl-10 absolute lg:top-5 left-0 right-0 bg-transparent pr-0">
             <div className="form-control hidden lg:block navbar-start">
-                <img src={logo} alt="" />
+                <img src={logo} alt="logo" />
             </div>
             <div className="navbar-start p-0">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        <img className='w-5 h-5' src={hamBurger} alt="collapse menu icon" />
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow w-52" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                         {navLink}
                     </ul>
                 </div>
             </div>
-            <div className="navbar-center hidden lg:flex bg-slate-600">
-                <ul className="menu menu-horizontal p-0" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                    {navLink}
-                </ul>
-            </div>
-            <div className="form-control lg:hidden navbar-end">
-                <img src={logo} alt="" />
+            <div className='navbar-center hidden lg:flex'>
+                <div className="w-[473px] h-[1px] opacity-25 bg-white left-72 z-50 absolute"></div>
+                <div className="w-[800px] h-[96px] backdrop-blur-[60px] flex items-center">
+                    <ul className="menu menu-horizontal p-0 m-0 text-white lg:ml-14" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                        {navLink}
+                    </ul>
+                </div>
+
+                <div className="form-control lg:hidden navbar-end">
+                    <img src={logo} alt="logo" />
+                </div>
             </div>
         </div>
     );
