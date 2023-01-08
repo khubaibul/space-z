@@ -6,7 +6,6 @@ import SingleDestination from './SingleDestination';
 const Destination = () => {
     const [allDestinations, setAllDestinations] = useState([]);
     const [destination, setDestination] = useState({});
-    const [destinationId, setDestinationId] = useState(1);
 
     useEffect(() => {
         fetch("data.json")
@@ -19,9 +18,7 @@ const Destination = () => {
 
 
     const handleId = id => {
-        setDestinationId(id);
-        const destinationById = allDestinations.find(d => d._id === destinationId);
-        setDestination(destinationById)
+        setDestination(allDestinations.find(d => d._id === id))
     }
 
     return (
@@ -32,7 +29,7 @@ const Destination = () => {
                 </div>
                 <div>
                     <div className='ml-[882px]'>
-                        <DestinationNavbar handleId={handleId} />
+                        <DestinationNavbar handleId={handleId} destination={destination} />
                     </div>
                     <div>
                         {

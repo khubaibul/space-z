@@ -4,18 +4,9 @@ import logo from "../../../assets/shared/logo.svg";
 import hamBurger from "../../../assets/shared/icon-hamburger.svg";
 
 const Navbar = () => {
-    // let activeStyle = {
-    //     backgroundColor: "#002233",
-    //     color: "white"
-    // };
-    // let activeClassName = "underline";
 
     const navLinkStyle = ({ isActive }) => {
         return {
-            // textDecoration: isActive ? 'underline' : 'none',
-            // textDecorationColor: isActive ? '#ce048e' : 'none',
-            // textDecorationThickness: isActive ? "6px" : "",
-            // textUnderlineOffset: isActive ? "7px" : "",
             borderBottom: isActive ? "4px solid white" : "",
             backgroundColor: isActive ? "transparent" : "transparent",
             color: isActive ? "white" : ""

@@ -4,12 +4,11 @@ import moon from "../../../assets/destination/image-moon.png";
 
 const SingleDestination = ({ destination }) => {
     const { _id, name, images, description, distance, travel } = destination;
-    console.log(destination);
 
     return (
         <div className='flex justify-around'>
             <div className=''>
-                <img src={images} alt="" />
+                <img src={images} alt="Space Destination" />
             </div>
             <div className='w-1/3 mt-10'>
                 <div>
