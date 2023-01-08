@@ -1,21 +1,24 @@
 import React from 'react';
+import TechnologyNavbar from './TechnologyNavbar';
 
 
-const SingleTechnology = ({ technology }) => {
+const SingleTechnology = ({ handleId, technology }) => {
 
     const { _id, name, images, description } = technology;
 
 
     return (
-        <div className='basis-4/5 flex'>
-            <div className='basis-2/4 flex flex-col justify-center ml-20'>
-                <p className='text-xs text-secondary absolute -mt-64' style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>THE TERMINOLOGY ...</p>
-                <h2 className='text-5xl text-white uppercase absolute -mt-44' style={{ fontFamily: "'Bellefair', sans-serif" }}>{name}</h2>
-                <p className='text-secondary text-xl leading-9 w-[444px] mt-10' style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{description}</p>
+        <div className='lg:basis-full flex md:flex-col-reverse lg:flex-row'>
+            <div className='lg:basis-2/4 flex flex-col lg:justify-center lg:items-start lg:ml-20 md:items-center md:mt-10'>
+                <p className='lg:text-xs text-secondary lg:text-start md:mb-3 md:text-base' style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>THE TERMINOLOGY ...</p>
+                <h2 className='lg:text-5xl md:text-4xl  text-white uppercase' style={{ fontFamily: "'Bellefair', sans-serif" }}>{name}</h2>
+                <p className='text-secondary text-xl leading-9 w-[444px] md:text-center md:mt-5 lg:text-start' style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{description}</p>
             </div>
 
-            <div className='basis-2/4 flex justify-end'>
-                <img src={images?.portrait} alt="Space Shuttle" />
+            <div className='lg:basis-2/4 lg:flex lg:justify-end'>
+                <img className='hidden lg:block' src={images?.portrait} alt="Space Shuttle" />
+                <img className='md:w-full hidden md:block lg:hidden' src={images?.landscape} alt="Space Shuttle" />
+                <div className='hidden md:block lg:hidden'><TechnologyNavbar handleId={handleId} technology={technology} /></div>
             </div>
         </div>
     );
