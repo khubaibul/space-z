@@ -1,5 +1,4 @@
 import React from 'react';
-import moon from "../../../assets/destination/image-moon.png";
 import DestinationNavbar from '../Shared/DestinationNavbar';
 
 

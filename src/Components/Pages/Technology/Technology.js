@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import techDesktopBg from "../../../assets/technology/background-technology-desktop.jpg";
 import SingleTechnology from './SingleTechnology';
 import TechnologyNavbar from './TechnologyNavbar';
 
@@ -30,7 +29,7 @@ const Technology = () => {
 
 
     return (
-        <div className="lg:h-screen bg-cover lg:bg-[url('https://i.ibb.co/Pc3hpcp/background-technology-desktop.jpg')] md:bg-[url('https://i.ibb.co/zhfxd66/background-technology-tablet.jpg')] sm:bg-[url('https://i.ibb.co/Bt0yY6p/background-technology-mobile.jpg')]" style={{ backgroundImage: `url(${techDesktopBg})` }}>
+        <div className="lg:h-screen bg-cover lg:bg-[url('https://i.ibb.co/Pc3hpcp/background-technology-desktop.jpg')] md:bg-[url('https://i.ibb.co/zhfxd66/background-technology-tablet.jpg')] sm:bg-[url('https://i.ibb.co/Bt0yY6p/background-technology-mobile.jpg')]">
             <div className='pt-40'>
                 <div className='lg:ml-40'>
                     <h4 className='text-white text-3xl md:text-2xl md:ml-14 tracking-widest uppercase lg:text-start md:text-start sm:text-center' style={{ fontFamily: "'Barlow Condensed', sans-serif" }}><span className='font-semibold opacity-25 mr-6'>03</span>SPACE LAUNCH 007</h4>
