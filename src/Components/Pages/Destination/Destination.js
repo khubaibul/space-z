@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import destinationBgDesktop from "../../../assets/destination/background-destination-desktop.jpg";
 import DestinationNavbar from '../Shared/DestinationNavbar';
 import SingleDestination from './SingleDestination';
 
