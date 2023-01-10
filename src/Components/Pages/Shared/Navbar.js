@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from "../../../assets/shared/logo.svg";
 import hamBurger from "../../../assets/shared/icon-hamburger.svg";
+import menuCancel from "../../../assets/shared/icon-close.svg";
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
 
     const navLinkStyle = ({ isActive }) => {
         return {
@@ -13,6 +15,9 @@ const Navbar = () => {
         }
     }
 
+    const handleDropdownMenu = () => {
+
+    }
 
     const navLink = <>
         <li className='tracking-wide'><NavLink className="transition duration-500" to="/" style={navLinkStyle}><span className='font-semibold tracking-widest'>00</span> HOME</NavLink></li>
@@ -27,8 +32,8 @@ const Navbar = () => {
             </div>
             <div className="navbar-start p-0 sm:justify-end justify-start sm:ml-40">
                 <div className="dropdown">
-                    <label tabIndex={0} className="btn btn-ghost lg:hidden md:hidden">
-                        <img className='w-5 h-5' src={hamBurger} alt="collapse menu icon" />
+                    <label onClick={() => setOpen(!open)} tabIndex={0} className="btn btn-ghost lg:hidden md:hidden">
+                        <img className='w-5 h-5' src={open ? menuCancel : hamBurger} alt="collapse menu icon" />
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow backdrop-blur-[100px]" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                         {navLink}
