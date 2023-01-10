@@ -24,7 +24,7 @@ const Destination = () => {
         <div className="lg:h-screen bg-cover lg:bg-[url('https://i.ibb.co/bPzrLys/background-destination-desktop.jpg')] md:bg-[url('https://i.ibb.co/dJg5PMY/background-destination-tablet.jpg')] sm:bg-[url('https://i.ibb.co/yNZBsQf/background-destination-mobile.jpg')]">
             <div className='pt-40'>
                 <div className='lg:ml-40 mb-16'>
-                    <h4 className='text-white text-3xl md:text-2xl md:ml-14 tracking-widest' style={{ fontFamily: "'Barlow Condensed', sans-serif" }}><span className='font-semibold opacity-25 mr-6'>01</span>PICK YOUR DESTINATION</h4>
+                    <h4 className='text-white text-3xl md:text-2xl md:ml-14 tracking-widest text-center lg:text-start' style={{ fontFamily: "'Barlow Condensed', sans-serif" }}><span className='font-semibold opacity-25 mr-6'>01</span>PICK YOUR DESTINATION</h4>
                 </div>
                 <div>
                     <div className='lg:ml-[882px] hidden lg:block'>

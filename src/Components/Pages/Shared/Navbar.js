@@ -22,10 +22,10 @@ const Navbar = () => {
     </>
     return (
         <div className="navbar lg:pb-2 lg:pl-10 md:p-0 absolute lg:top-5 left-0 right-0 bg-transparent pr-0">
-            <div className="form-control lg:block md:block md:pl-8 sm:ml-5">
+            <div className="form-control lg:w-56 lg:block md:block sm:block hidden md:pl-8 sm:ml-5">
                 <Link to="/"><img src={logo} alt="logo" /></Link>
             </div>
-            <div className="navbar-start p-0 sm:justify-end sm:ml-40">
+            <div className="navbar-start p-0 sm:justify-end justify-start sm:ml-40">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden md:hidden">
                         <img className='w-5 h-5' src={hamBurger} alt="collapse menu icon" />
