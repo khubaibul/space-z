@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from "../../../assets/shared/logo.svg";
 import hamBurger from "../../../assets/shared/icon-hamburger.svg";
 import menuCancel from "../../../assets/shared/icon-close.svg";
 
-const Navbar = () => {
-    const [open, setOpen] = useState(false)
+const Navbar = ({ setOpen, open }) => {
 
     const navLinkStyle = ({ isActive }) => {
         return {
@@ -27,14 +26,14 @@ const Navbar = () => {
             <div className="form-control lg:w-56 lg:block md:block sm:block hidden md:pl-8 sm:ml-5">
                 <Link to="/"><img src={logo} alt="logo" /></Link>
             </div>
-            <div className="navbar-start p-0 sm:justify-end justify-start sm:ml-40">
+            <div className="navbar-start p-0 sm:justify-end justify-end sm:ml-40 w-full">
                 <div className="dropdown">
                     <label onClick={() => setOpen(!open)} tabIndex={0} className="btn btn-ghost lg:hidden md:hidden">
                         <img className='w-5 h-5' src={open ? menuCancel : hamBurger} alt="collapse menu icon" />
                     </label>
-                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow backdrop-blur-[100px]" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                    {/* <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow backdrop-blur-[100px]" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                         {navLink}
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
             <div className='navbar-center hidden lg:flex md:flex'>
