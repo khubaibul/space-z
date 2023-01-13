@@ -12,7 +12,7 @@ const Home = () => {
             </div>
 
             <div className='lg:mb-[131px] lg:mt-0 mt-20 md:mt-14 md:flex sm:flex sm:mt-20 flex justify-center'>
-                <div className='lg:w-64 lg:h-64 md:w-64 md:h-64 w-56 h-56 rounded-full bg-white flex justify-center items-center text-4xl'>
+                <div className='lg:w-64 lg:h-64 md:w-64 md:h-64 w-56 h-56 rounded-full bg-white flex justify-center items-center text-4xl lg:hover:outline-[68px] md:hover:outline-[48px] sm:hover:outline-[34px] hover:outline-[34px] hover:outline outline-[#24262F]'>
                     <h3 className='text-accent' style={{ fontFamily: "'Bellefair', sans-serif" }}>EXPLORE</h3>
                 </div>
             </div>

@@ -15,15 +15,12 @@ const Navbar = () => {
         }
     }
 
-    const handleDropdownMenu = () => {
-
-    }
 
     const navLink = <>
-        <li className='tracking-wide'><NavLink className="transition duration-500" to="/" style={navLinkStyle}><span className='font-semibold tracking-widest'>00</span> HOME</NavLink></li>
-        <li className='tracking-wide'><NavLink className="transition duration-500" to="/destination" style={navLinkStyle}><span className='font-semibold tracking-widest'>01</span> DESTINATION</NavLink></li>
-        <li className='tracking-wide'><NavLink className="transition duration-500" to="/crew" style={navLinkStyle}><span className='font-semibold tracking-widest'>02</span> CREW</NavLink></li>
-        <li className='tracking-wide'><NavLink className="transition duration-500" to="/technology" style={navLinkStyle}><span className='font-semibold tracking-widest'>03</span> TECHNOLOGY</NavLink></li>
+        <li className='tracking-wide'><NavLink className="transition duration-500 hover:border-b-4 hover:border-gray-500" to="/" style={navLinkStyle}><span className='font-semibold tracking-widest'>00</span> HOME</NavLink></li>
+        <li className='tracking-wide'><NavLink className="transition duration-500 hover:border-b-4 hover:border-gray-500" to="/destination" style={navLinkStyle}><span className='font-semibold tracking-widest'>01</span> DESTINATION</NavLink></li>
+        <li className='tracking-wide'><NavLink className="transition duration-500 hover:border-b-4 hover:border-gray-500" to="/crew" style={navLinkStyle}><span className='font-semibold tracking-widest'>02</span> CREW</NavLink></li>
+        <li className='tracking-wide'><NavLink className="transition duration-500 hover:border-b-4 hover:border-gray-500" to="/technology" style={navLinkStyle}><span className='font-semibold tracking-widest'>03</span> TECHNOLOGY</NavLink></li>
     </>
     return (
         <div className="navbar lg:pb-2 lg:pl-10 md:p-0 absolute lg:top-5 left-0 right-0 bg-transparent pr-0">
@@ -43,7 +40,7 @@ const Navbar = () => {
             <div className='navbar-center hidden lg:flex md:flex'>
                 <div className="w-[473px] h-[1px] opacity-25 bg-white left-72 z-50 absolute hidden lg:block"></div>
                 <div className="lg:w-[800px] h-[96px] backdrop-blur-[80px] flex items-center">
-                    <ul className="menu menu-horizontal p-0 m-0 text-white lg:ml-14" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                    <ul className="menu menu-horizontal p-0 m-0 text-white lg:ml-14 h-full gap-4" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                         {navLink}
                     </ul>
                 </div>

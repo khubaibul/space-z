@@ -11,19 +11,19 @@ const SingleCrew = ({ handleId, crew }) => {
                 <div className='flex gap-x-4 lg:mt-96 lg:fixed md:my-10 sm:my-10 sm:justify-center'>
                     <button
                         onClick={() => handleId(1)}
-                        className={`w-3 h-3 rounded-full bg-white ${_id === 1 ? "opacity-100" : "opacity-25"}`}>
+                        className={`w-3 h-3 rounded-full bg-white ${_id === 1 ? "opacity-100" : "opacity-25"} hover:opacity-50`}>
                     </button>
                     <button
                         onClick={() => handleId(2)}
-                        className={`w-3 h-3 rounded-full bg-white ${_id === 2 ? "opacity-100" : "opacity-25"}`}>
+                        className={`w-3 h-3 rounded-full bg-white ${_id === 2 ? "opacity-100" : "opacity-25"} hover:opacity-50`}>
                     </button>
                     <button
                         onClick={() => handleId(3)}
-                        className={`w-3 h-3 rounded-full bg-white ${_id === 3 ? "opacity-100" : "opacity-25"}`}>
+                        className={`w-3 h-3 rounded-full bg-white ${_id === 3 ? "opacity-100" : "opacity-25"} hover:opacity-50`}>
                     </button>
                     <button
                         onClick={() => handleId(4)}
-                        className={`w-3 h-3 rounded-full bg-white ${_id === 4 ? "opacity-100" : "opacity-25"}`}>
+                        className={`w-3 h-3 rounded-full bg-white ${_id === 4 ? "opacity-100" : "opacity-25"} hover:opacity-50`}>
                     </button>
                 </div>
             </div>
