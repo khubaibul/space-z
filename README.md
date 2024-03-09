@@ -9,4 +9,4 @@
 - React
 - React Router DOM
 - Fetch
-- Netlify
+- Netlif

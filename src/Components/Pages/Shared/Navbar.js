@@ -28,7 +28,7 @@ const Navbar = ({ setOpen, open }) => {
             </div>
             <div className="navbar-start p-0 sm:justify-end justify-end sm:ml-40 w-full">
                 <div className="dropdown">
-                    <label onClick={() => setOpen(!open)} tabIndex={0} className="btn btn-ghost lg:hidden md:hidden">
+                    <label onClick={() => setOpen(!open)} tabIndex={0} className="btn btn-ghost lg:hidden md:hidden transition-all duration-200">
                         <img className='w-5 h-5' src={open ? menuCancel : hamBurger} alt="collapse menu icon" />
                     </label>
                     {/* <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow backdrop-blur-[100px]" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>

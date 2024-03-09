@@ -20,7 +20,7 @@ const SmallNavbar = ({ setOpen, open }) => {
     </>
     return (
 
-        <div className='top-0 right-0 fixed h-full w-[70vw] ease-in-out duration-500 translate-y-0 z-10 p-4 backdrop-blur-[100px]'>
+        <div className='top-0 right-0 fixed h-full w-[70vw] transition-all ease-in-out duration-500 translate-y-0 z-10 p-4 backdrop-blur-[100px]'>
             <div className='flex justify-end mt-1'>
                 <button onClick={() => setOpen(!open)}><img src={cancelIcon} alt="" /></button>
             </div>
